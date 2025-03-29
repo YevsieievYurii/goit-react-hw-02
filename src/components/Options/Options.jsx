@@ -1,4 +1,4 @@
-function Options({ updateFeedback }) {
+function Options({ updateFeedback, resetFeedback, totalFeedback }) {
   return (
     <div className="btn-container">
       <button className="btn" onClick={() => updateFeedback("good")}>
@@ -10,6 +10,11 @@ function Options({ updateFeedback }) {
       <button className="btn" onClick={() => updateFeedback("bad")}>
         Bad
       </button>
+      {totalFeedback > 0 && (
+        <button className="btn" onClick={resetFeedback}>
+          Reset
+        </button>
+      )}
     </div>
   );
 }

@@ -15,8 +15,8 @@
 
 body {
   margin: 0;
+  padding: 20px;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -27,6 +27,7 @@ body {
 }
 
 .btn {
+  color: black;
   background-color: wheat;
 }
 
